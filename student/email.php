@@ -25,18 +25,17 @@ $currentDateTime = $currentDateTime->format('Y-m-d H:i'); echo $currentDateTime;
 
 
 $sql = "SELECT * FROM exam_assign 
-        JOIN room_assign ON exam_assign.tim = room_assign.tim AND exam_assign.id = room_assign.rumid 
-        WHERE CONCAT(exam_assign.dt, ' ', exam_assign.tim) <= '$currentDateTime' AND exam_assign.noticed_status != 1";
+        JOIN room_assign ON exam_assign.tim = room_assign.tim AND exam_assign.eid = room_assign.eid 
+        WHERE CONCAT(exam_assign.dt, ' ', exam_assign.tim) <= '$currentDateTime' AND exam_assign.noticed_status = 0";
 $result = mysqli_query($dbcon, $sql);
 
 
 if (mysqli_num_rows($result) > 0) {
-    
     $emailQuery = "SELECT DISTINCT student_data.addr, room_assign.*
     FROM student_data 
-    JOIN room_assign ON student_data.id = room_assign.rolnum 
+    JOIN room_assign ON student_data.admnum = room_assign.rolnum 
     JOIN exam_assign ON room_assign.tim = exam_assign.tim 
-                      AND room_assign.rumid = exam_assign.id 
+                      AND room_assign.eid = exam_assign.eid 
     WHERE CONCAT(exam_assign.dt, ' ', exam_assign.tim) <= '$currentDateTime' 
     AND exam_assign.noticed_status != 1";
 $emailResult = mysqli_query($dbcon, $emailQuery);
@@ -45,8 +44,6 @@ $emailResult = mysqli_query($dbcon, $emailQuery);
         while ($row = mysqli_fetch_assoc($emailResult)) {
             $to = $row['addr'];
             $subject = "Exam Hall Details";
-            
-
 $message = '<html><body>';
 $message .= '<h2>Exam Hall Details</h2>';
 $message .= '<p>Dear Student,</p>';
