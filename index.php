@@ -292,18 +292,7 @@ body{
 <body>
 
     <div class="container" id="container">
-    <?php
-                            if(isset($_GET['ch']))
-                            {
-                                echo"<font color='green'>Password changed successfully... continue login</font>";
-                            }
-                          
-
-                             if(isset($_GET['error']))
-                            {
-                                echo"<font color='red'>Invalid User Credentials</font>";
-                            }
-                            ?>
+    
         <div class="form-container sign-up">
             <form method="post">
                 <h1>Faculty Login</h1>
@@ -317,7 +306,18 @@ body{
         <div class="form-container sign-in">
             <form method="post">
                 <h1> Login</h1>
-               
+                <?php
+                            if(isset($_GET['ch']))
+                            {
+                                echo"<font color='green'>Password changed successfully... continue login</font>";
+                            }
+                          
+
+                             if(isset($_GET['error']))
+                            {
+                                echo"<font color='red'>Invalid User Credentials</font>";
+                            }
+                            ?>
                 <span>Login With Username And Password</span>
                 <input type="text" placeholder="username" name="un">
                 <input type="password" placeholder="Password" name="pwd">
