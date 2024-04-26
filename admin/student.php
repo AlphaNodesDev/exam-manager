@@ -49,8 +49,7 @@ if(isset($_FILES['up']['name']))
     $sheet = $xlsx->getSheet(1);
     $data=$sheet->getData();
     foreach($data as $row) {
-    $ins_st=mysqli_query($dbcon,"INSERT INTO `student_data`(`crs`, `dep`, `sem`, `ay`, `active_st`, `nme`, `admnum`, `addr`, `con`, `fatrnme`, `mob`, `bldgrp`, `pic`, `st`, `gndr`) VALUES ('$cid','$did','$sem','$ay','1','".escape($row[0])."','".escape($row[1])."','".escape($row[2])."','".escape($row[3])."','".escape($row[4])."','".escape($row[5])."','".escape($row[6])."','".escape($row[7])."','1','".escape($row[8])."')");
-       echo mysqli_error($dbcon); 
+    $ins_st=mysqli_query($dbcon,"INSERT INTO `student_data`(`crs`, `dep`, `sem`, `ay`, `active_st`, `nme`, `admnum`, `addr`, `con`, `fatrnme`, `mob`, `bldgrp`, `pic`, `st`, `gndr`) VALUES ('$cid','$did','$sem','$ay','1','".escape($row[0])."','".escape($row[1])."','".escape($row[2])."','".escape($row[3])."','".escape($row[4])."','".escape($row[5])."','".escape($row[6])."','nopic.png','1','".escape($row[7])."')");
 //$ins=mysqli_query($dbcon,"INSERT INTO `exam_stud`(`eassign_id`, `studid`, `xamtyp`) VALUES ('$eaid','".escape($row[0])."','".escape($row[1])."')");
         $ins=mysqli_query($dbcon,"INSERT INTO `user_log`(`uid`, `pwd`, `typ`, `st`) VALUES ('".escape($row[1])."','student','stud','1')");
         
