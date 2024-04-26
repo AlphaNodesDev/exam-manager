@@ -459,7 +459,7 @@ if(isset($_POST['sub']))
                                                                         echo $rstf[1];
                                                                         ?>
                                         </td>
-                                        <td><a href="../teacher/smaterial/<?php echo $rm1[7] ?>"
+                                        <td><a href="../teacher/pquestions/<?php echo $rm1[7] ?>"
                                                 class="label label-danger" target="_Blank"><span
                                                     class="fa fa-download"></span></a></td>
                                     </tr>
