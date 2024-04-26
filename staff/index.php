@@ -344,6 +344,14 @@ header("location:../index.php");
 
 						<b class="arrow"></b>
 					</li>
+					<li class="">
+                    <a href="./email.php">
+                        <i class="menu-icon fa fa-user"></i>
+                        <span class="menu-text">Send Seat Allocations </span>
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
                                     </ul><!-- /.nav-list -->
 
 				<!-- #section:basics/sidebar.layout.minimize -->
