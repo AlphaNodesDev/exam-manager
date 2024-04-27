@@ -17,7 +17,7 @@ $currentDateTime = $currentDateTime->format('Y-m-d H:i');
 
 $sql = "SELECT * FROM exam_assign 
         JOIN room_assign ON exam_assign.tim = room_assign.tim AND exam_assign.eid = room_assign.eid 
-        WHERE CONCAT(exam_assign.dt, ' ', exam_assign.tim) <= '$currentDateTime' AND exam_assign.noticed_status = 0";
+        WHERE exam_assign.noticed_status = 0";
 $result = mysqli_query($dbcon, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -26,8 +26,7 @@ if (mysqli_num_rows($result) > 0) {
     JOIN room_assign ON student_data.admnum = room_assign.rolnum 
     JOIN exam_assign ON room_assign.tim = exam_assign.tim 
                       AND room_assign.eid = exam_assign.eid 
-    WHERE CONCAT(exam_assign.dt, ' ', exam_assign.tim) <= '$currentDateTime' 
-    AND exam_assign.noticed_status != 1";
+    WHERE  exam_assign.noticed_status != 1";
     $emailResult = mysqli_query($dbcon, $emailQuery);
 
     if (mysqli_num_rows($emailResult) > 0) {
@@ -76,7 +75,7 @@ if (mysqli_num_rows($result) > 0) {
             }
 
            
-            usleep(500000); /
+            usleep(500000); 
         }
     } else {
         echo "No email addresses found in the database.<br>";
