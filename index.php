@@ -17,7 +17,7 @@ if(isset($_POST['sub']))
         if($rlog[3]=="STAF")
         {
             $_SESSION['stf']=$un;
-            if($pwd=="christ")
+            if($pwd=="tstaff")
             {
                 header("location:changepas.php");
             }
@@ -41,7 +41,7 @@ if(isset($_POST['sub']))
         if($rlog[3]=="TSTAF")
         {
             $_SESSION['tchr']=$un;            
-            if($pwd=="christ")
+            if($pwd=="tstaff")
             {
                 header("location:changepas1.php");
             }

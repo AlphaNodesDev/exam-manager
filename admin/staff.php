@@ -419,14 +419,17 @@ if(isset($_GET['did']))
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Contact Number</td>
-                                                                    <td><input type="text" name="con" class="form-control" required="required" /></td>
+                                                                    <td><input type="number" name="con" class="form-control" required="required" /></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Email</td>
                                                                     <td><input type="email" name="em" class="form-control" required="required" /></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>Qualification</td>
+                                 
+									
+									
+																<td>Qualification</td>
                                                                     <td><input type="text" name="qua" class="form-control" required="required" /></td>
                                                                 </tr>
                                                                 <tr>

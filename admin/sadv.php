@@ -602,8 +602,8 @@ function vem(a)
                                                                     <td><input type="text" name="sid" class="form-control" required="required" onblur="chkuid(this.value)" /><span id="sid1"></span></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>Password : Default-christ</td>
-                                                                    <td><input type="password" value="christ" name="pas" class="form-control" required="required" /></td>
+                                                                    <td>Password : Default-tstaff</td>
+                                                                    <td><input type="password" value="tstaff" name="pas" class="form-control" required="required" /></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Staff Type</td>
@@ -668,7 +668,7 @@ function vem(a)
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Contact Number</td>
-                                                                    <td><input type="text" name="con" class="form-control" required="required" onkeyup="chkc(this.value)" /><span id="o3"></span></td>
+                                                                    <td><input type="number" name="con" class="form-control" required="required" onkeyup="chkc(this.value)" /><span id="o3"></span></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Email</td>

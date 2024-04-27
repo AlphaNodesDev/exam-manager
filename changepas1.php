@@ -90,49 +90,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-	<div class="header">
-		<div class="content white">
-			<nav class="navbar navbar-default">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-                                            <a class="navbar-brand" href="index.php">
-                                                    <img src="logo/logo.png" style="height: 60px;" />
-						</a>
-					</div>
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
-                                            <nav class="link-effect-2" id="link-effect-2" >
-                                                <ul class="nav navbar-nav" style="float: right;">                                                                
-								<li class="active">
-                                                                    <a href="index.php" class="effect-3">Home</a>
-								</li>
-								<li>
-									<a href="invigilator.php" class="effect-3">Invigilator</a>
-								</li>	
-                                                               
-                                                                
-							</ul>
-						</nav>
-                                            
-                                            
-                                            
-                                            
-					</div>
-					<!--/.navbar-header-->
-					
-					<!--/.navbar-collapse-->
-					<!--/.navbar-->
-				</div>
-			</nav>
-		</div>
-	</div>
+	
 	<!-- banner -->
-	<div class="inner_page_agile">
+
 
 	</div>
 	<!--//banner --><br />
@@ -140,7 +100,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="row">
                 <div class="col-lg-12">
                     <div class="col-lg-6">
-                        <img src="logo/7ecd37fa-c001-47cc-ad09-3d0318c83b95.jpg" class="img img-responsive" />
                     </div>
                     <div class="col-lg-6">
                         <div class="alert alert-danger">
@@ -205,24 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- testimonials -->
 	
 	<!-- //testimonials -->
-	<!-- footer --><br />
-	<div class="mkl_footer">
-		<div class="sub-footer">
-			
-		</div>
-		<div class="footer-copy-right">
-			<div class="container">
-				<div class="allah-copy">
-					<p>© 2020 Notice Board. All rights reserved | Design by
-						<a href="#">Trinity Technologies</a>
-					</p>
-				</div>
-				
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!--/footer -->
+
 
 	<!-- js files -->
 	<!-- js -->

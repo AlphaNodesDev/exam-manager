@@ -417,7 +417,7 @@ function escape($string) {
                 </tr>
                 <tr>
                     <td>Contact Number</td>
-                    <td><input type="text" name="con" class="form-control" required="required" /></td>
+                    <td><input type="number" name="con" class="form-control" required="required" /></td>
                 </tr>
                 <tr>
                     <td>Father Name</td>
@@ -425,7 +425,7 @@ function escape($string) {
                 </tr>
                 <tr>
                     <td>Father Contact Number</td>
-                    <td><input type="text" name="fcon" class="form-control" required="required" /></td>
+                    <td><input type="number" name="fcon" class="form-control" required="required" /></td>
                 </tr>
                 <tr>
                     <td>Blood Group</td>
