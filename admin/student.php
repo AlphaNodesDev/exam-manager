@@ -540,7 +540,6 @@ function escape($string) {
                         </select>
                     </td>
                 </tr>
-				
                 <tr>
                     <td colspan="2"><center><input type="submit" name="sub" value="ADD STUDENT" class="btn btn-sm btn-danger" /></center></td>
                 </tr>
@@ -558,6 +557,12 @@ function escape($string) {
                                                 <div class="row">                                                    
                                                         <div class="col-lg-12">
                                                            <?php
+                                                       if(isset($_GET['de'])){
+														  $de = $_GET['de'];
+														  $delete = mysqli_query($dbcon,"delete from student_data where id='$de'");
+														  
+													   }
+
                                                            if(isset($_GET['c']))
                                                            {
                                                                $c=$_GET['c'];
@@ -580,7 +585,7 @@ function escape($string) {
                                                                     }
                                                                     else
                                                                     {
-                                                                       
+                                                                        //alert();
                                                                        $("#st"+i).load("updateregnum.php?r="+r+"&s="+s);
                                                                     }
                                                                 }
@@ -614,7 +619,7 @@ function escape($string) {
                                                                     <td><?php echo $rst[7] ?></td>
                                                                     <td><?php echo $rst[9] ?></td>
                                                                     <td>Semester <?php echo $rst[3] ?></td>
-																	<td><a href="<?php  ?>" class="btn btn-sm btn-danger">Delete</a></td>
+																	<td><a href="?c=<?php echo $c ?>&d=<?php echo $d ?>&ay=<?php echo $ay ?>&sem=<?php echo $sem ?>&st=<?php echo $rst[0] ?>&del=1&de=<?php echo $rst[0]; ?>" class="btn btn-sm btn-danger">Delete</a></td>
 
                                                                     
                                                                 </tr>
